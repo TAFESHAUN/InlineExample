@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InlineExample.View.AboutUs"
+             Title="AboutUs">
+    <VerticalStackLayout>
+        <Label TextColor="Green" FontSize="Medium" x:Name="sentStuID"></Label>
+        <Label TextColor="Red" FontSize="Title" x:Name="setSentName" />
+        <Button Text="CLICK ME TO GET THE NAME" Clicked="Button_Clicked"></Button>
+    </VerticalStackLayout>
+</ContentPage>

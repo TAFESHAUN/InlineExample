@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ResDictionary.MainPage"
+             >
+    <StackLayout>
+        <Label Text="Hello, MAUI!" Style="{StaticResource MyLabelStyle}" />
+        <Label Text="Hello, MAUI!" />
+        <Label Text="Hello, MAUI!" Style="{StaticResource Login}" />
+
+        <Button Text="Hello World"/>
+        <Button Text="Hello Special Button" Style="{StaticResource SpecialButton}"/>
+
+        <Label Text="Username" Style="{StaticResource Login}" />
+        <Entry Style="{StaticResource UserNameEntry}"></Entry>
+        <Label Text="Password" Style="{StaticResource Login}" />
+        <Entry Style="{StaticResource PasswordEntry}"></Entry>
+        <Entry />
+        <Entry />
+        <Entry />
+
+        <Label Text="Say something cool" FontSize="Title"/>
+        <Entry TextColor="Aquamarine" BackgroundColor="HotPink"></Entry>
+        
+        <Button Style="{StaticResource SpecialButton}" TextColor="MediumVioletRed" BackgroundColor="Aquamarine"> </Button>
+
+    </StackLayout>
+
+</ContentPage>

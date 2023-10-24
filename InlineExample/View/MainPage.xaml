@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InlineExample.View.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="labelStyle" TargetType="Label">
+                <Setter Property="TextColor" Value="DarkOrange" />
+                <Setter Property="FontSize" Value="24" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+            <Style x:Key="buttonStyle" TargetType="Button" >
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="BackgroundColor" Value="#006EFF" />
+                <Setter Property="BorderColor" Value="Coral" />
+                <!--<Setter Property="MaximumWidthRequest" Value="200" />-->
+                <Setter Property="FontSize" Value="18" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Hello, MAUI!" x:Name="helloLabel"
+               Style="{DynamicResource labelStyle}" />
+            <Label Text="Hello world "
+                    Style="{DynamicResource labelStyle}"/>
+            <Label Text="Hello people "
+                    Style="{DynamicResource labelStyle}"/>
+            <Label Text="Some label here "
+                    Style="{DynamicResource labelStyle}"/>
+            <Label Text="etc...... "
+                    Style="{DynamicResource labelStyle}"/>
+            <Button Text="Click Me" x:Name="clickButton"
+                Style="{DynamicResource buttonStyle}"/>
+            <Button Text="Another Button to click"  Style="{DynamicResource buttonStyle}" MaximumWidthRequest="400"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+
+</ContentPage>

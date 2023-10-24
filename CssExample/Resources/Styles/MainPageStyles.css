@@ -1,0 +1,22 @@
+.myCustomLabel {
+    font-size: 20;
+    color: #0078d4;
+}
+
+.myCustomButton {
+    background-color: #0078d4;
+    color: #ffffff;
+}
+
+/*@media (platform: ios) {
+    Label {
+        font-size: small;
+    }
+}
+
+@media (platform: android) {
+    Label {
+    }
+        font-size: medium;
+}
+*/

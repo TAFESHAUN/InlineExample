@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             ><!--x:Class="ResDictionary.Resources.Styles.MyStyles"-->
+
+    <!-- KEY, ONLY KEY TARGETS WILL GET STYLE -->
+    <Style x:Key="MyLabelStyle" TargetType="Label">
+        <Setter Property="TextColor" Value="Red" />
+        <Setter Property="FontSize" Value="30" />
+        <Setter Property="FontAttributes" Value="Italic" />
+
+        <!-- Set properties based on the theme -->
+        <!--<OnPlatform x:TypeArguments="Color">
+            <On Platform="iOS" Value="Green" />
+            <On Platform="Android" Value="Blue" />
+        </OnPlatform>-->
+
+    </Style> 
+    
+    <!-- KEY, ONLY KEY TARGETS WILL GET STYLE -->
+    <Style x:Key="Login" TargetType="Label">
+        <Setter Property="TextColor" Value="LightBlue" />
+        <Setter Property="FontSize"  Value="Small"/>
+
+    </Style>
+
+    <!-- Implicit, SO ALL LABELS -->
+    <Style TargetType="Label">
+        <Setter Property="TextColor" Value="Yellow" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <!--FONT FAMILY OR FONT TYPE CUSTOM FONTS-->
+    </Style>
+
+    <Style TargetType="Button" >
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="BackgroundColor" Value="#006EFF" />
+        <Setter Property="BorderColor" Value="Coral" />
+        <Setter Property="MaximumWidthRequest" Value="200" />
+        <Setter Property="FontSize" Value="18" />
+        <Setter Property="Text" Value="Submit" />
+    </Style>
+
+    <Style x:Key="SpecialButton" TargetType="Button" >
+        <Setter Property="FontSize" Value="Large" />
+        <Setter Property="MaximumWidthRequest" Value="400" />
+        <!--<Setter Property="BackgroundColor" Value="DarkOliveGreen"/>-->
+    </Style>
+
+    <Style x:Key="UserNameEntry" TargetType="Entry">
+        <Setter Property="Placeholder" Value="Enter your Username"/>
+    </Style>
+
+    <Style x:Key="PasswordEntry" TargetType="Entry">
+        <Setter Property="Placeholder" Value="Enter your Password"/>
+    </Style>
+
+    <Style TargetType="Entry">
+        <Setter Property="Placeholder" Value="Enter some values"/>
+        <Setter Property="BackgroundColor" Value="black" />
+        <Setter Property="TextColor" Value="DarkRed" />
+        <Setter Property="FontSize" Value="Small"/>
+    </Style>
+
+
+
+</ResourceDictionary>
